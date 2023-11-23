@@ -1,0 +1,49 @@
+# Implement clearAllTimeout in JavaScript
+
+```js
+//to store timer ids
+window.timerIds = [];
+
+//store original sett timeout
+window.originalSetTimeout = window.setTimeout;
+
+window.setTimeout = function (fn, delay) {
+  //store the ids
+  const id = originalSetTimeout(fn, delay);
+
+  timerIds.push(id);
+
+  console.log(`id returned - ${id}`);
+  return id;
+};
+
+window.clearAllTimeout = function () {
+  while (timerIds.length) {
+    clearTimeout(timerIds.pop());
+  }
+};
+
+setTimeout(() => {
+  console.log(1);
+}, 1000);
+
+setTimeout(() => {
+  console.log(2);
+}, 2000);
+
+setTimeout(() => {
+  console.log(3);
+}, 3000);
+
+setTimeout(() => {
+  console.log(4);
+}, 4000);
+
+console.log(timerIds);
+
+setTimeout(() => {
+  console.log("clearing");
+  clearAllTimeout();
+  console.log("cleared");
+}, 2500);
+```
