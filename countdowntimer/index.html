@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="contaner__title">
+            Countdown Timer
+        </h1>
+        <div class="container__labels">
+            <p class="container__labels--label">
+                Hours
+            </p>
+            <p class="container__labels--label">
+                Minutes
+            </p>
+            <p class="container__labels--label">
+                Seconds
+            </p>
+        </div>
+        <div class="container__inputs">
+            <input type="number"
+                placeholder="00"
+                maxlength="2"
+                oninput="this.value=this.value.slice(0,this.maxLength)"
+                class="container__inputs--time hour">
+            <p class="container__inputs--colon">:</p>
+            <input type="number"
+                placeholder="00"
+                maxlength="2"
+                oninput="this.value=this.value.slice(0,this.maxLength)"
+                class="container__inputs--time minute">
+            <p class="container__inputs--colon">:</p>
+            <input type="number"
+                placeholder="00"
+                maxlength="2"
+                oninput="this.value=this.value.slice(0,this.maxLength)"
+                class="container__inputs--time second">
+        </div>
+        <div class="container__btns">
+            <button class="btn start">
+                Start
+            </button>
+            <button class="btn stop">
+                Pause
+            </button>
+            <button class="btn reset">
+                Reset
+            </button>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
