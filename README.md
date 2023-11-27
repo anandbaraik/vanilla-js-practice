@@ -1,11 +1,11 @@
 # vanilla-js-practice
 
-This repository consists of vanilla js practice questions for machine coding interviews.
+This repository consists of vanilla js practice questions & solutions for machine coding interviews.
 
 ## Other repo related to it.
 
-- 👉 [DSA using JS](https://github.com/anandbaraik/DSA)
-- 👉 [React.js practice questions](https://github.com/anandbaraik/react-js-practice)
+- 👉 [DSA using JS/TS](https://github.com/anandbaraik/DSA)
+- 👉 [React.js practice questions & solutions](https://github.com/anandbaraik/react-js-practice)
 
 ### Discussion
 
