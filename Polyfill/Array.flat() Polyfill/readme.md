@@ -1,3 +1,10 @@
+# Syntax
+
+```js
+flat(depth)
+- depth : optional, default to 1
+```
+
 # Array.flat() Js implementation without depth
 
 ```js
